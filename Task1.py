@@ -4,7 +4,8 @@ path=r"C:\Users\Md Nayeem\Desktop\Task\New folder\data"
 l = os.listdir(path)
 
 for fi in l:
-    with open( fi,"r") as f:
+    fpath=path+'\\'+fi
+    with open( fpath,"r") as f:
         data = json.load(f)
 
 
