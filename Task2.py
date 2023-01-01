@@ -6,7 +6,7 @@ newDict={"description": "","tags": [],"size": {"height": 720,"width": 1280},"obj
 
 for fi in l:
     fpath=path+'\\'+fi
-    with open( fi,"r") as f:
+    with open( fpath,"r") as f:
         data = json.load(f)
     objList = data['objects']
     for i in objList:
