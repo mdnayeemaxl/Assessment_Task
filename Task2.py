@@ -5,6 +5,7 @@ l = os.listdir(path)
 newDict={"description": "","tags": [],"size": {"height": 720,"width": 1280},"objects": []}
 
 for fi in l:
+    fpath=path+'\\'+fi
     with open( fi,"r") as f:
         data = json.load(f)
     objList = data['objects']
